@@ -186,8 +186,11 @@
 		// Enqueue main style.css
 		wp_enqueue_style('byline-style', get_stylesheet_uri(), array(), '1.0.0');
 		
-		// Enqueue custom fonts LAST to override everything
+		// Enqueue custom fonts
 		wp_enqueue_style('byline-custom-fonts', get_stylesheet_directory_uri() . '/assets/css/custom-fonts.css', array('byline-main-style', 'byline-style'), '1.0.1');
+		
+		// Enqueue font fix CSS LAST to ensure browser compatibility
+		wp_enqueue_style('byline-font-fix', get_stylesheet_directory_uri() . '/assets/css/font-fix.css', array('byline-custom-fonts'), '1.0.0');
 	}	
 
 

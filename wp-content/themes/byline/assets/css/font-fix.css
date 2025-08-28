@@ -1,0 +1,262 @@
+/* ========================================
+   FONT DISPLAY FIXES FOR CHROME & FIREFOX
+   ======================================== */
+
+/* Browser-specific font rendering optimizations */
+@supports (-webkit-font-smoothing: antialiased) {
+    /* Chrome/Safari specific optimizations */
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "kern" 1;
+        font-kerning: normal;
+    }
+}
+
+@supports (-moz-osx-font-smoothing: auto) {
+    /* Firefox specific optimizations */
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, a {
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "kern" 1;
+        font-kerning: normal;
+    }
+}
+
+/* Universal font rendering improvements */
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, div, a {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/* Specific fixes for ML-KV-Navya font */
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Heavy Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Specific fixes for ML-KV-Kanaka font */
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Heavy Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force consistent font rendering across browsers */
+body {
+    font-family: 'ML-KV-Navya', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ML-KV-Navya', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/* Firefox-specific font weight adjustments */
+@-moz-document url-prefix() {
+    body {
+        font-weight: 600; /* Slightly lighter for Firefox */
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 800; /* Slightly lighter for Firefox */
+    }
+}
+
+/* Chrome-specific font weight adjustments */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    body {
+        font-weight: bold; /* Keep bold for Chrome */
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 900; /* Keep 900 for Chrome */
+    }
+}
+
+/* Additional browser-specific fixes */
+/* Firefox */
+@supports (-moz-appearance: none) {
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, a {
+        font-synthesis: none; /* Prevent synthetic bold/italic */
+    }
+}
+
+/* Chrome/Safari */
+@supports (-webkit-appearance: none) {
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, a {
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke: 0.45px transparent; /* Improves text rendering */
+    }
+}
+
+/* Edge */
+@supports (-ms-ime-align: auto) {
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* Ensure consistent line height across browsers */
+body {
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+/* Fix for specific elements that might render differently */
+.axil-post-title,
+.featured-title,
+.section-title,
+.widget-title {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/* Additional fixes for navigation and buttons */
+.navbar-nav li a,
+.btn,
+.button,
+input[type="submit"] {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Force consistent rendering for all text elements */
+* {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
