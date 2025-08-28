@@ -1,0 +1,745 @@
+/* Custom Font Declarations */
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Navya';
+    src: url('../fonts/ML-KV-Navya Heavy Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Kanaka Font Declarations */
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ML-KV-Kanaka';
+    src: url('../fonts/ML-KV-Kanaka Heavy Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Base font settings for content */
+body {
+    font-family: 'ML-KV-Navya', sans-serif;
+    font-weight: bold;
+}
+
+/* Headings with Heavy weight */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ML-KV-Navya', sans-serif;
+    font-weight: 900;
+}
+
+/* Kanaka font for specific page - More specific selectors */
+body.home-kanaka-page,
+body[data-page="home-kanaka"] {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: bold;
+}
+
+body.home-kanaka-page h1,
+body.home-kanaka-page h2,
+body.home-kanaka-page h3,
+body.home-kanaka-page h4,
+body.home-kanaka-page h5,
+body.home-kanaka-page h6,
+body[data-page="home-kanaka"] h1,
+body[data-page="home-kanaka"] h2,
+body[data-page="home-kanaka"] h3,
+body[data-page="home-kanaka"] h4,
+body[data-page="home-kanaka"] h5,
+body[data-page="home-kanaka"] h6 {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900;
+}
+
+/* Override any existing font declarations for Kanaka page */
+body.home-kanaka-page *,
+body[data-page="home-kanaka"] * {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Ensure headings use heavy weight on Kanaka page */
+body.home-kanaka-page h1,
+body.home-kanaka-page h2,
+body.home-kanaka-page h3,
+body.home-kanaka-page h4,
+body.home-kanaka-page h5,
+body.home-kanaka-page h6,
+body[data-page="home-kanaka"] h1,
+body[data-page="home-kanaka"] h2,
+body[data-page="home-kanaka"] h3,
+body[data-page="home-kanaka"] h4,
+body[data-page="home-kanaka"] h5,
+body[data-page="home-kanaka"] h6 {
+    font-weight: 900 !important;
+}
+
+/* Alt font class for English content */
+.alt-font {
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+    font-weight: normal;
+}
+
+/* Specific elements that should use alt-font */
+.navbar,
+.navbar-nav,
+.navbar-nav li a,
+.navbar-brand,
+.footer-menu ul li a,
+.footer-social-bookmark ul li a,
+.top-social-bookmark ul li a,
+.tags ul li a,
+.post-meta a,
+.comment-meta h5,
+.footer-copyright p,
+.side-nav-content ul li a,
+.header-top-nav li,
+.search-form input,
+.search-form input::placeholder,
+.book-table-popup a,
+.call-to-action p,
+.contact-info,
+.social-share li a,
+.breadcrumbs,
+.pagination li a,
+.widget-title,
+.sidebar-widget ul li a,
+.contact-form input,
+.contact-form textarea,
+.contact-form label,
+.modal-title,
+.modal-body,
+.btn,
+.button,
+input[type="submit"],
+input[type="button"],
+select,
+option,
+.header-top,
+.header-top li,
+.header-top-nav,
+.header-top-nav li,
+.header-top-nav li a,
+.side-nav,
+.side-nav .side-navigation,
+.side-nav .side-navigation li,
+.side-nav .side-navigation li a,
+.footer-widget,
+.footer-widget .footer-nav,
+.footer-widget .footer-nav li,
+.footer-widget .footer-nav li a,
+.footer-bottom,
+.footer-bottom ul,
+.footer-bottom ul li,
+.footer-bottom ul li a,
+.footer-social-share,
+.footer-social-share li,
+.footer-social-share li a,
+.post-shares,
+.post-shares li,
+.post-shares li a,
+.widget-title,
+.widget-title h3,
+.category-list-wrapper,
+.category-list-wrapper li,
+.category-list-wrapper li a,
+.tag-list-wrapper,
+.tag-list-wrapper li,
+.tag-list-wrapper li a,
+.social-share-list-wrapper,
+.social-share-list-wrapper li,
+.social-share-list-wrapper li a,
+.axil-contact-info-inner,
+.axil-contact-info-inner li,
+.axil-contact-info-inner li a,
+.search-form,
+.search-form input,
+.search-form input::placeholder,
+.search-form button,
+.search-form label,
+.form-control,
+.form-control::placeholder,
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-link,
+.button,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+textarea,
+select,
+option,
+label,
+.axil-post-title,
+.axil-post-title a,
+.post-meta,
+.post-meta ul,
+.post-meta ul li,
+.post-meta ul li a,
+.post-info,
+.post-info ul,
+.post-info ul li,
+.post-info ul li a,
+.comment-meta,
+.comment-meta h5,
+.comment-meta a,
+.breadcrumb,
+.breadcrumb li,
+.breadcrumb li a,
+.pagination,
+.pagination li,
+.pagination li a,
+.page-link,
+.page-item,
+.page-item a,
+.nav-pills,
+.nav-pills li,
+.nav-pills li a,
+.tab-pane,
+.tab-pane h3,
+.tab-pane h4,
+.tab-pane h5,
+.tab-pane h6,
+.tab-pane p,
+.tab-pane a,
+.modal-title,
+.modal-body,
+.modal-body p,
+.modal-body a,
+.modal-footer,
+.modal-footer button,
+.modal-footer a,
+.alert,
+.alert p,
+.alert a,
+.badge,
+.badge-on-image,
+.badge-on-recommended,
+.cmp-live-label,
+.live-blink-circle,
+.live-dot,
+.post-time,
+.post-time i,
+.clock-icon,
+.entry-description,
+.key-events-title,
+.event-item,
+.event-bullet,
+.score-update,
+.exchange-widget,
+.exchange-widget .widget-header,
+.exchange-widget .last-updated,
+.rate-item,
+.currency-info,
+.currency-name,
+.currency-symbol,
+.rate-value,
+.rate-values,
+.widget-footer,
+.widget-footer small {
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+    font-weight: normal;
+}
+
+/* Ensure proper font weights for different elements */
+.navbar-nav li a:hover,
+.footer-menu ul li a:hover,
+.tags ul li a:hover,
+.post-meta a:hover {
+    font-weight: bold;
+}
+
+/* Form elements and buttons */
+input, textarea, select, button {
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+}
+
+/* Override any existing font declarations */
+.main-navigation,
+.side-navigation,
+.footer-navigation {
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+}
+
+/* Ensure headings maintain proper hierarchy */
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; }
+
+/* Independent scrolling for content and sidebar */
+.post-single-wrapper {
+    height: calc(100vh - 200px); /* Adjust based on your header/footer height */
+    overflow: hidden;
+}
+
+.post-single-wrapper .row {
+    height: 100%;
+}
+
+.post-single-wrapper .col-lg-8 {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.post-single-wrapper .col-lg-4 {
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 15px;
+}
+
+/* Custom scrollbar styling */
+.post-single-wrapper .col-lg-8::-webkit-scrollbar,
+.post-single-wrapper .col-lg-4::-webkit-scrollbar {
+    width: 6px;
+}
+
+.post-single-wrapper .col-lg-8::-webkit-scrollbar-track,
+.post-single-wrapper .col-lg-4::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.post-single-wrapper .col-lg-8::-webkit-scrollbar-thumb,
+.post-single-wrapper .col-lg-4::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.post-single-wrapper .col-lg-8::-webkit-scrollbar-thumb:hover,
+.post-single-wrapper .col-lg-4::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Ensure proper spacing */
+.post-single-wrapper .site-main {
+    height: 100%;
+}
+
+.post-single-wrapper .post-sidebar {
+    height: 100%;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 991px) {
+    .post-single-wrapper {
+        height: auto;
+        overflow: visible;
+    }
+    
+    .post-single-wrapper .col-lg-8,
+    .post-single-wrapper .col-lg-4 {
+        height: auto;
+        overflow: visible;
+        padding: 15px;
+    }
+    
+    .post-single-wrapper .row {
+        height: auto;
+    }
+}
+
+/* Ensure the banner section doesn't interfere with scrolling */
+.banner {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add some breathing room for the content */
+.post-single-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Logo and navigation improvements */
+.brand-logo-container a {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.brand-logo-container a:hover {
+    opacity: 0.8;
+}
+
+.brand-logo {
+    max-height: 60px;
+    width: auto;
+}
+
+/* Ensure logo is clickable on mobile */
+@media (max-width: 991px) {
+    .brand-logo-container a {
+        padding: 10px 0;
+    }
+    
+    .brand-logo {
+        max-height: 50px;
+    }
+}
+
+/* ========================================
+   KANAKA FONT OVERRIDE FOR HOME-KANAKA PAGE
+   ======================================== */
+
+/* Override CSS variables for home-kanaka page */
+html body.home-kanaka-page,
+html body[data-page="home-kanaka"],
+body.home-kanaka-page,
+body[data-page="home-kanaka"] {
+    --primary-font: 'ML-KV-Kanaka', sans-serif !important;
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: bold !important;
+}
+
+/* Also override the CSS variable on the html element for maximum coverage */
+html body.home-kanaka-page,
+html body[data-page="home-kanaka"] {
+    --primary-font: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Force Kanaka font for ALL elements on home-kanaka page */
+html body.home-kanaka-page *,
+html body[data-page="home-kanaka"] *,
+body.home-kanaka-page *,
+body[data-page="home-kanaka"] * {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Force Kanaka font for headings on home-kanaka page */
+html body.home-kanaka-page h1,
+html body.home-kanaka-page h2,
+html body.home-kanaka-page h3,
+html body.home-kanaka-page h4,
+html body.home-kanaka-page h5,
+html body.home-kanaka-page h6,
+html body[data-page="home-kanaka"] h1,
+html body[data-page="home-kanaka"] h2,
+html body[data-page="home-kanaka"] h3,
+html body[data-page="home-kanaka"] h4,
+html body[data-page="home-kanaka"] h5,
+html body[data-page="home-kanaka"] h6,
+body.home-kanaka-page h1,
+body.home-kanaka-page h2,
+body.home-kanaka-page h3,
+body.home-kanaka-page h4,
+body.home-kanaka-page h5,
+body.home-kanaka-page h6,
+body[data-page="home-kanaka"] h1,
+body[data-page="home-kanaka"] h2,
+body[data-page="home-kanaka"] h3,
+body[data-page="home-kanaka"] h4,
+body[data-page="home-kanaka"] h5,
+body[data-page="home-kanaka"] h6 {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Override any existing font declarations that might interfere */
+html body.home-kanaka-page .alt-font,
+html body[data-page="home-kanaka"] .alt-font,
+body.home-kanaka-page .alt-font,
+body[data-page="home-kanaka"] .alt-font {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Additional specific overrides for common elements */
+html body.home-kanaka-page p,
+html body[data-page="home-kanaka"] p,
+body.home-kanaka-page p,
+body[data-page="home-kanaka"] p {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: bold !important;
+}
+
+html body.home-kanaka-page .axil-post-title,
+html body[data-page="home-kanaka"] .axil-post-title,
+body.home-kanaka-page .axil-post-title,
+body[data-page="home-kanaka"] .axil-post-title {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Force override for any element with existing font declarations */
+html body.home-kanaka-page *:not(.alt-font),
+html body[data-page="home-kanaka"] *:not(.alt-font),
+body.home-kanaka-page *:not(.alt-font),
+body[data-page="home-kanaka"] *:not(.alt-font) {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Override any element that uses the CSS variable */
+html body.home-kanaka-page [style*="var(--primary-font)"],
+html body[data-page="home-kanaka"] [style*="var(--primary-font)"],
+body.home-kanaka-page [style*="var(--primary-font)"],
+body[data-page="home-kanaka"] [style*="var(--primary-font)"] {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Force override for headings that use CSS variables */
+html body.home-kanaka-page h1,
+html body.home-kanaka-page h2,
+html body.home-kanaka-page h3,
+html body.home-kanaka-page h4,
+html body.home-kanaka-page h5,
+html body.home-kanaka-page h6,
+html body[data-page="home-kanaka"] h1,
+html body[data-page="home-kanaka"] h2,
+html body[data-page="home-kanaka"] h3,
+html body[data-page="home-kanaka"] h4,
+html body[data-page="home-kanaka"] h5,
+html body[data-page="home-kanaka"] h6,
+body.home-kanaka-page h1,
+body.home-kanaka-page h2,
+body.home-kanaka-page h3,
+body.home-kanaka-page h4,
+body.home-kanaka-page h5,
+body.home-kanaka-page h6,
+body[data-page="home-kanaka"] h1,
+body[data-page="home-kanaka"] h2,
+body[data-page="home-kanaka"] h3,
+body[data-page="home-kanaka"] h4,
+body[data-page="home-kanaka"] h5,
+body[data-page="home-kanaka"] h6 {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Ultra-specific override for any element using CSS variables */
+html body.home-kanaka-page *,
+html body[data-page="home-kanaka"] *,
+body.home-kanaka-page *,
+body[data-page="home-kanaka"] * {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Specific override for the featured-title class */
+html body.home-kanaka-page .featured-title,
+html body[data-page="home-kanaka"] .featured-title,
+body.home-kanaka-page .featured-title,
+body[data-page="home-kanaka"] .featured-title {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* ========================================
+   PAGE ID 184 SPECIFIC TARGETING
+   ======================================== */
+
+/* Target page ID 184 specifically for maximum specificity */
+body.page-id-184,
+html body.page-id-184 {
+    --primary-font: 'ML-KV-Kanaka', sans-serif !important;
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: bold !important;
+}
+
+/* Force Kanaka font for ALL elements on page ID 184 */
+body.page-id-184 *,
+html body.page-id-184 * {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Force Kanaka font for headings on page ID 184 */
+body.page-id-184 h1,
+body.page-id-184 h2,
+body.page-id-184 h3,
+body.page-id-184 h4,
+body.page-id-184 h5,
+body.page-id-184 h6,
+html body.page-id-184 h1,
+html body.page-id-184 h2,
+html body.page-id-184 h3,
+html body.page-id-184 h4,
+html body.page-id-184 h5,
+html body.page-id-184 h6 {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Override any existing font declarations for page ID 184 */
+body.page-id-184 .alt-font,
+html body.page-id-184 .alt-font {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Additional specific overrides for common elements on page ID 184 */
+body.page-id-184 p,
+html body.page-id-184 p {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: bold !important;
+}
+
+body.page-id-184 .axil-post-title,
+html body.page-id-184 .axil-post-title {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Force override for any element with existing font declarations on page ID 184 */
+body.page-id-184 *:not(.alt-font),
+html body.page-id-184 *:not(.alt-font) {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Override any element that uses the CSS variable on page ID 184 */
+body.page-id-184 [style*="var(--primary-font)"],
+html body.page-id-184 [style*="var(--primary-font)"] {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Specific override for the featured-title class on page ID 184 */
+body.page-id-184 .featured-title,
+html body.page-id-184 .featured-title {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Ultra-specific override for page ID 184 - target everything */
+body.page-id-184,
+body.page-id-184 *,
+html body.page-id-184,
+html body.page-id-184 * {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+} 
+
+/* ========================================
+   ULTRA-SPECIFIC HEADER OVERRIDES FOR PAGE ID 184
+   ======================================== */
+
+/* Override ALL heading elements on page ID 184 with maximum specificity */
+body.page-id-184 h1,
+body.page-id-184 h2,
+body.page-id-184 h3,
+body.page-id-184 h4,
+body.page-id-184 h5,
+body.page-id-184 h6,
+html body.page-id-184 h1,
+html body.page-id-184 h2,
+html body.page-id-184 h3,
+html body.page-id-184 h4,
+html body.page-id-184 h5,
+html body.page-id-184 h6 {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Override specific heading classes that might be used */
+body.page-id-184 .heading,
+body.page-id-184 .axil-post-title,
+body.page-id-184 .featured-title,
+body.page-id-184 .area-title h2,
+html body.page-id-184 .heading,
+html body.page-id-184 .axil-post-title,
+html body.page-id-184 .featured-title,
+html body.page-id-184 .area-title h2 {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+    font-weight: 900 !important;
+}
+
+/* Override any element that might inherit font from body */
+body.page-id-184 *,
+html body.page-id-184 * {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Force override for any element with inline styles */
+body.page-id-184 [style*="font-family"],
+html body.page-id-184 [style*="font-family"] {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Override any element using CSS variables */
+body.page-id-184 [style*="var(--primary-font)"],
+html body.page-id-184 [style*="var(--primary-font)"] {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Additional specificity for common content elements */
+body.page-id-184 p,
+body.page-id-184 div,
+body.page-id-184 span,
+body.page-id-184 a,
+html body.page-id-184 p,
+html body.page-id-184 div,
+html body.page-id-184 span,
+html body.page-id-184 a {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+}
+
+/* Override any existing font declarations with maximum specificity */
+body.page-id-184 *:not(.alt-font),
+html body.page-id-184 *:not(.alt-font) {
+    font-family: 'ML-KV-Kanaka', sans-serif !important;
+} 
